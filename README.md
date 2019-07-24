@@ -1,12 +1,6 @@
 # \<Wet-lab 管理制度\>
 
-
-
-
-
-
-
-
+[TOC]
 
 ### 1. 训练&指导
 
@@ -229,29 +223,26 @@ __注意事项__
 
 ####   (3) 建议 
 
-值日总结报告邮件中，可以提出对湿实验室管理方面的建议。 
+值日总结报告邮件中，可以提出对湿实验室管理方面的建议 :smile:。
 
 
 
----
 
-PRACTICE:
 
-> SSSSSSSS  
->
-> ​	SDDD
->
-> SSSSSS
 
-> SSS
->
-> SS
-> *SSSSSSsss*
->
->
->
-> SS
 
-- [ ] *ss*
-- [ ] 
-- 
+PERSONAL TESTS:
+
+'''printf()'''
+
+'printf()'
+
+- [ ] sss
+
+:laughing:
+
+
+
+
+
+
