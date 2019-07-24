@@ -1,4 +1,4 @@
-# \<Wet-lab 管理制度\>
+# <center>Wet-lab 管理制度<center>
 
 [TOC]
 
