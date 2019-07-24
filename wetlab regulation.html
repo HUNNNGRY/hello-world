@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>wetlab regulation</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:///Users/baopengfei/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:///Users/baopengfei/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:///Users/baopengfei/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:///Users/baopengfei/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff');
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///Users/baopengfei/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 4px 2px 4px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name='header-n100' class='md-header-anchor '></a><center>Wet-lab 管理制度<center></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n100"><a class="md-toc-inner" style="" href="#header-n100">Wet-lab 管理制度</a></span><span class="md-toc-item md-toc-h3" data-ref="n1181"><a class="md-toc-inner" style="" href="#header-n1181">1. 训练&amp;指导</a></span><span class="md-toc-item md-toc-h3" data-ref="n223"><a class="md-toc-inner" style="" href="#header-n223">2. 实验台分配&amp;配置</a></span><span class="md-toc-item md-toc-h4" data-ref="n227"><a class="md-toc-inner" style="" href="#header-n227">  (1) Bench</a></span><span class="md-toc-item md-toc-h4" data-ref="n897"><a class="md-toc-inner" style="" href="#header-n897">  (2) 配置</a></span><span class="md-toc-item md-toc-h3" data-ref="n270"><a class="md-toc-inner" style="" href="#header-n270">3. RNA 超净台注意事项</a></span><span class="md-toc-item md-toc-h3" data-ref="n616"><a class="md-toc-inner" style="" href="#header-n616">4. 实验室冰箱</a></span><span class="md-toc-item md-toc-h3" data-ref="n274"><a class="md-toc-inner" style="" href="#header-n274">5. 实验室仪器预约&amp;试剂订购 </a></span><span class="md-toc-item md-toc-h4" data-ref="n408"><a class="md-toc-inner" style="" href="#header-n408">  (1) 实验室内部仪器预约</a></span><span class="md-toc-item md-toc-h4" data-ref="n682"><a class="md-toc-inner" style="" href="#header-n682">  (2) 实验平台仪器预约</a></span><span class="md-toc-item md-toc-h4" data-ref="n427"><a class="md-toc-inner" style="" href="#header-n427">  (3) 实验室试剂耗材采购途径</a></span><span class="md-toc-item md-toc-h3" data-ref="n706"><a class="md-toc-inner" style="" href="#header-n706">6. 值日安排 </a></span><span class="md-toc-item md-toc-h4" data-ref="n449"><a class="md-toc-inner" style="" href="#header-n449">实验室成员每两周轮班值日:</a></span><span class="md-toc-item md-toc-h4" data-ref="n455"><a class="md-toc-inner" style="" href="#header-n455">值日生职责:</a></span><span class="md-toc-item md-toc-h3" data-ref="n281"><a class="md-toc-inner" style="" href="#header-n281">7.实验室管理报告 </a></span><span class="md-toc-item md-toc-h4" data-ref="n474"><a class="md-toc-inner" style="" href="#header-n474">  (1) 值日报告</a></span><span class="md-toc-item md-toc-h4" data-ref="n478"><a class="md-toc-inner" style="" href="#header-n478">  (2) 提醒 </a></span><span class="md-toc-item md-toc-h4" data-ref="n485"><a class="md-toc-inner" style="" href="#header-n485">  (3) 建议 </a></span></p></div><p>&nbsp;</p><h3><a name='header-n1181' class='md-header-anchor '></a>1. 训练&amp;指导</h3><p>​        为方便新生尽快熟悉实验室、建立起良好的实验习惯，wet-lab实行老带新的方法。 每一位新加入实验室的Junior student应至少跟随一位senior student学 习2个月以上，通过观察学习实验操作规范和技巧。   期间senior student需要对所带的学生负责，每天在其实验记录本上签字，认真用心培养。   根据 Junior student的进度，可以从电泳、qPCR、RNA提取等实验开始训练，每个操作的开始两次需要senior student全程陪同并指出错误，规范操作。 对新生的训练不仅限于对其负责的高年级学生，大家应互相帮助，知无不言，共同培养新同学。
+</p><p>​<span>	</span><strong>实验室须知</strong></p><ul><li><p>参加实验时，不能穿拖鞋、短裤。</p></li><li><p>不得在实验室储藏食品、饮食、抽烟。</p></li><li><p>禁止往水槽内倒 入杂物和强酸、强碱及有毒的有机溶剂。</p></li><li><p>实验室内不允许用电炉烧水、做饭等，生活用品不能带入实验室。</p></li><li><p>不准在实验室内抽烟，乱丢烟头、火种。</p></li><li><p>每位实验室工作人员要牢记以下安全规定:</p><p>  (1)熟悉所使用的化学物质的特性和潜在危害。</p><p>  (2)检查设备的性能，充分考虑到使用设备的局限性。</p><p>  (3)工作中碰到疑问及时请教资深的研究人员或其他专家，不得盲目操作。</p></li><li><p>保持实验台干净整洁、无堆积，每天至少清理一次实验台面，通常在下班前
+或完成某个特定实验后进行。</p></li></ul><h3><a name='header-n223' class='md-header-anchor '></a>2. 实验台分配&amp;配置</h3><h4><a name='header-n227' class='md-header-anchor '></a>  (1) Bench</h4><p>  #1: <u>少贞</u>、运昕</p><p>  #2: <u>思琦</u>、田晨、胡茜</p><p>  #3: <u>张尚</u>、红科</p><p>&nbsp;</p><p><strong>注意事项</strong>
+为保持实验室的整洁、确保实验顺利，大家需养成良好的实验习惯，具体注意 事项如下:</p><ul><li>原则上，每人需在自己的实验台上进行操作; </li></ul><ul><li>借用实验台时，请提前与负责人沟通，使用时注意防止交叉污染，并在使用
+后将实验台恢复原貌;  </li></ul><ul><li>做实验需穿实验服、戴口罩、戴手套;  </li></ul><ul><li>实验前，需要提前对超净台紫外灭菌、清点所需试剂并解冻; </li></ul><ul><li>实验中，酶需要放在冰/冰盒上，避免vortex，标记清楚实验试剂; </li></ul><ul><li>实验后，移液枪调零、整理台面、倾倒废液缸、关闭实验仪器(离心机需开盖以防冷凝);  </li></ul><ul><li>离开实验室时，检查仪器是否关闭、冰箱门是否紧闭、随手关灯关。  </li></ul><p>&nbsp;</p><h4><a name='header-n897' class='md-header-anchor '></a>  (2) 配置</h4><ul><li><p>每个实验台的基本配置:6把量程不等的移液枪、1000/200/10ul 枪头各一 盒、rack、废液缸;  </p></li><li><p>两台低温离心机，分别置于#2和#3号台一侧;  </p></li><li><p>两个vortex，分别置于#1/#2台中间和#3号台各一个;  </p></li><li><p>两个掌上离心机，置于#1/#2台中间;  </p></li><li><p> #1/#2实验台之间的架子:1.5/2ml离心管、8联排管、磁力架、qPCR96孔板、封口膜、笔筒、剪刀; </p></li><li><p> #3实验台架子:rack、离心管架。 </p><p>&nbsp;</p></li></ul><h3><a name='header-n270' class='md-header-anchor '></a>3. RNA 超净台注意事项</h3><ul><li>使用工作台时，提前30分钟打开紫外灯照射消毒，处理净化工作区内工作台 表面积累的微生物;</li><li>关闭紫外灯，开启送风机，将超净台罩开启至一半高度; </li><li>穿着实验服、戴口罩、戴手套; </li><li>工作台面上，不要存放不必要的物品，以保持工作区内的洁净气流不受干扰;</li><li>操作时，注意多用酒精和RNase Zap喷洒擦拭双手，所有拿进超净台的物品均需酒精消毒; </li><li>超净台内的移液枪、枪头、置物架、rack等不可随意拿出超净台; </li><li>操作结束后，整理工作台面，倾倒废液缸(分类倾倒)并用酒精喷洒，用清洁剂及消毒剂擦拭台面进行消毒; </li><li>开启工作台紫外灯，照射消毒30分钟后，关闭紫外灯，切断电源; </li><li>值日生每周对其进行彻底消毒，包括:酒精和RNaseZap擦拭，移液枪、置物架、屏罩等的清理，紫外消毒 </li></ul><p>&nbsp;</p><h3><a name='header-n616' class='md-header-anchor '></a>4. 实验室冰箱</h3><p>实验室目前有以下4台冰箱:</p><ul><li>4度透明冰箱: 
+主要放置RNase-free water、Trizol、ethanol等试剂   DNA marker、loading buffer等电泳相关试剂   Qubit、AMPure beads等kit  </li></ul><ul><li><p>-20度冰箱  </p><p><span>	</span>第一层:Geng Sisi  
+<span>	</span>第二层:Zhang Shang   
+<span>	</span>第三层:Xing Shaozhen   <span>	</span>
+<span>	</span>第四层:Wang Siqi   
+<span>	</span>第五层:Wang Hongke   
+<span>	</span>第六层:public reagent   
+<span>	</span>第七层:Ice box、Ice pack  </p></li><li><p>-80度冰箱(3305房间)  
+<span>	</span>第一列:协和样本  
+<span>	</span>第二列:北医肠癌、胃癌、肺癌样本  
+<span>	</span>第三列:正常人、肝癌样本   
+<span>	</span>第四列:红科试剂  
+<span>	</span>第五列:思琦试剂   
+<span>	</span>最下层:干冰、已离开人员的试剂及样本  </p></li></ul><ul><li><p>4度/-20度组合冰箱(暂时关闭) </p><p>&nbsp;</p></li></ul><h3><a name='header-n274' class='md-header-anchor '></a>5. 实验室仪器预约&amp;试剂订购 </h3><h4><a name='header-n408' class='md-header-anchor '></a>  (1) 实验室内部仪器预约</h4><ul><li>针对使用情况，以下两台实验室内部仪器需要预约: 
+RNA超净台 
+PCR仪  </li><li><strong>需至少提前一天进行预约，在预约表上登记使用时间、使用人，必要时可多人协调同时使用。</strong></li></ul><p>&nbsp;</p><h4><a name='header-n682' class='md-header-anchor '></a>  (2) 实验平台仪器预约</h4><ul><li>qPCR仪、超高速离心机、大型显微镜等仪器需提前在校内仪器共享服务平台预约 
+预约链接:<a href='http://yqgx.tsinghua.edu.cn/webSite/websiteAction.do?ms=goToIndex' target='_blank' class='url'>http://yqgx.tsinghua.edu.cn/webSite/websiteAction.do?ms=goToIndex</a> </li></ul><p>&nbsp;</p><h4><a name='header-n427' class='md-header-anchor '></a>  (3) 实验室试剂耗材采购途径</h4><p>目前，实验室试剂耗材主要在以下两个平台采购:</p><ul><li>清华大学试剂材料info管理系统
+采购链接: <a href='http://mass.tsinghua.edu.cn/chem/www/index.php/Loginout/Index/login.html' target='_blank' class='url'>http://mass.tsinghua.edu.cn/chem/www/index.php/Loginout/Index/login.html</a> </li><li>供应室平台采购链接:<a href='http://www.gongyingshi.com/index/area-index' target='_blank' class='url'>http://www.gongyingshi.com/index/area-index</a> </li><li>如需购买试剂/耗材，应先与实验室管理员联系，获得购买权限;选定待采购 物品后下单，并联系实验室管理员审批。 </li><li>超过1,000元的试剂/耗材需要事先向实验室负责人(鲁老师)邮件请示，注明 试剂名称、用途、价格、详情链接，并抄送实验室管理员，待老师同意后才 可购买。 </li></ul><p>&nbsp;</p><p>​<span>	</span><strong>注意: 试剂/耗材采购均有一定的货期，请计划好实验，提前购买。 实验 室每月的值班人应定期检查常用试剂/耗材情况，及时购买与补充。 对于货期 较长的试剂，任何人在使用时发现余量不足1/3时，应及时联系值班人或该试剂 盒负责人，提前购买，避免影响实验。 </strong></p><p>&nbsp;</p><h3><a name='header-n706' class='md-header-anchor '></a>6. 值日安排 </h3><h4><a name='header-n449' class='md-header-anchor '></a>实验室成员每两周轮班值日:</h4><figure><table><thead><tr><th>负责人</th><th>日期</th></tr></thead><tbody><tr><td>邢少贞</td><td>3.4-3.17</td></tr><tr><td>王红科</td><td>3.18-3.31</td></tr><tr><td>王思琦</td><td>4.1-4.14</td></tr><tr><td>胡茜</td><td>4.15-4.28</td></tr><tr><td>徐运昕</td><td>4.29-5.12</td></tr><tr><td>张尚</td><td>5.13-5.26</td></tr></tbody></table></figure><p>​    </p><h4><a name='header-n455' class='md-header-anchor '></a>值日生职责:</h4><ul><li>购买实验室常用耗材，如手套、口罩、枪头、EP管、擦拭纸、去离子水等  </li><li>实验试剂不足1/3时请及时购买或联系该试剂指定负责人购买 </li><li> 根据情况，每周最少两次处理生物垃圾安全袋(工作日上午9:00之前，将生物废弃物垃圾袋上标明实验室和日期，放置于实验室门口处)  </li><li>根据使用情况，对枪头、离心管灭菌 </li><li>值日第二周的周末，清洗实验服、对实验室进行紫外消毒 </li><li>每晚检查各仪器设备是否关机、冰箱门是否紧闭 </li><li>每晚离开前检查仪器是否关闭，并关灯、关空调、关窗锁门 </li><li>实验仪器故障时，联系仪器指定负责人报修实验仪器设备 </li><li>督促大家保持实验台的干净整洁，养成良好实验习惯 </li></ul><p>&nbsp;</p><h3><a name='header-n281' class='md-header-anchor '></a>7.实验室管理报告 </h3><p><span>	</span>为保持实验室的整洁、确保实验顺利、促进大家成良好的实验习惯，值日生
+完成两周的值日后，需要在每两周的周一上午，进行值日总结报告，并Email给 lulab组。
+<span>	</span>包含值日报告、提醒&amp;通报、建议等内容，帮助大家互相监督、共同进步。 </p><h4><a name='header-n474' class='md-header-anchor '></a>  (1) 值日报告</h4><p>值日报告需要包含以下内容:  </p><figure><table><thead><tr><th>检查点</th><th>完成度/完成次数</th></tr></thead><tbody><tr><td>实验服清洗</td><td>[x]</td></tr><tr><td>实验室紫外消毒</td><td>[x]</td></tr><tr><td>提醒并检查实验记录本</td><td>[x]</td></tr><tr><td>RNA超净台清理</td><td>__次</td></tr><tr><td>高压灭菌</td><td>__次</td></tr><tr><td>生物安全袋处理</td><td>__次</td></tr><tr><td>常用耗材购买</td><td>xx.xx:枪头xx盒</td></tr><tr><td>常用试剂购买</td><td>xx.xx:酒精xx瓶</td></tr><tr><td>实验室设备维修情况</td><td>无</td></tr></tbody></table></figure><p>   </p><h4><a name='header-n478' class='md-header-anchor '></a>  (2) 提醒 </h4><p>总结邮件中，还应包含过去两周内不当行为的提醒，包含但不限于以下内容:
+ </p><figure><table><thead><tr><th>日期</th><th>实验台/仪器/个人</th><th>不当行为</th></tr></thead><tbody><tr><td>xx.xx</td><td>XXX</td><td>RNA超净台物品随意拿进/出</td></tr><tr><td>xx.xx</td><td>XXX</td><td>RNA超净台废液缸未处理</td></tr><tr><td>xx.xx</td><td>XXX</td><td>RNA超净台移液枪未调零</td></tr><tr><td>xx.xx</td><td>XXX</td><td>未穿实验服</td></tr><tr><td>xx.xx</td><td>XXX</td><td>实验台台面脏乱</td></tr></tbody></table></figure><p> </p><h4><a name='header-n485' class='md-header-anchor '></a>  (3) 建议 </h4><p>值日总结报告邮件中，可以提出对湿实验室管理方面的建议 😄。</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>PERSONAL TESTS</p><p>&nbsp;</p><center>Wet-lab 管理制度<center></center></center><p>&nbsp;</p><p>&#39;&#39;&#39;printf()&#39;&#39;&#39;</p><p>&#39;printf()&#39;</p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' disabled='disabled' /><p>sss</p></li></ul><p>😆</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</body>
+</html>
