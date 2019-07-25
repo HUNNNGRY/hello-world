@@ -95,7 +95,8 @@ __TOC__
 
 ==== (2) 实验平台仪器预约 ====
 
-* qPCR仪、超高速离心机、大型显微镜等仪器需提前在校内仪器共享服务平台预约  预约链接:http://yqgx.tsinghua.edu.cn/webSite/websiteAction.do?ms=goToIndex 
+* qPCR仪、超高速离心机、大型显微镜等仪器需提前在校内仪器共享服务平台预约  
+预约链接:http://yqgx.tsinghua.edu.cn/webSite/websiteAction.do?ms=goToIndex 
 
 
 
@@ -249,13 +250,11 @@ __TOC__
 
 
 
-'''printf()'''
 
-'printf()' 
 
 * sss 测试方框
 
-😆 
+😆 测试表情
 
 测试反引号：<code>printf(sss)</code>
 
